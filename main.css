@@ -156,6 +156,10 @@ header .menu-desktop .logo img {
 /* partes de los design */
 .main-graphic-design {
   position: relative;
+  overflow: hidden;
+}
+.main-graphic-design img {
+  width: 100%;
 }
 .main-graphic-design div {
   position: absolute;
@@ -177,3 +181,47 @@ header .menu-desktop .logo img {
 .main-graphic-design div p {
   font-size: 1.6rem;
 }
+/* testimonials section */
+.client-testimonials-container {
+  margin-top: 150px;
+  text-align: center;
+}
+.client-testimonials-container h2 {
+  font-size: 3rem;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: var(--grayish-blue);
+}
+.client-testimonials-container .testimonials-flex {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 150px;
+}
+.client-testimonials-container .testimonials-flex .item {
+  width: 350px;
+}
+.client-testimonials-container .testimonials-flex .item img {
+  border-radius: 50%;
+  width: 80px;
+  margin-bottom: 50px;
+}
+.client-testimonials-container .testimonials-flex .item p {
+  font-size: 1.6rem;
+  line-height: 25px;
+  color: var(--very-dark-grayish-blue);
+  margin-bottom: 50px;
+}
+.client-testimonials-container .testimonials-flex .item h3 {
+  font-size: 1.6rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+.client-testimonials-container .testimonials-flex .item span {
+  color: var(--grayish-blue);
+  font-size: 1.2rem;
+}
+/* images section */
