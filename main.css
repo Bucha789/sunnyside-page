@@ -225,3 +225,14 @@ header .menu-desktop .logo img {
   font-size: 1.2rem;
 }
 /* images section */
+.images-section-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.images-section-container div {
+  width: 25%;
+}
+.images-section-container div img {
+  width: 100%;
+}
