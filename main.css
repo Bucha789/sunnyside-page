@@ -59,7 +59,7 @@ header .menu-desktop nav ul li a{
   font-size: 1.4rem;
   color: white;
 }
-header .menu-desktop nav ul li button {
+header .menu-desktop nav ul li button, header .menu-mobile nav ul li button {
   background-color: white;
   border: none;
   border-radius: 50px;
@@ -80,9 +80,45 @@ header .menu-mobile {
 }
 .menu-mobile-options {
   position: absolute;
+  width: 100%;
+  padding: 0 20px;
+  top: 230%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: none;
 }
-
+.menu-mobile-options.active {
+  display: block;
+}
+.menu-mobile-options::before {
+  position: absolute;
+  content: '';
+  border-left: solid transparent 12.5px;
+  border-top: solid transparent 12.5px;
+  border-bottom: solid white 12.5px;
+  border-right: solid white 12.5px;
+  top: -24px;
+  right: 20px;
+  width: 0px;
+  height: 0px;
+}
+.menu-mobile-options ul {
+  background-color: white;
+  flex-direction: column;
+  padding: 20px 0;
+}
+.menu-mobile-options ul li {
+  margin: 15px 0;
+  /* margin-bottom: 20px; */
+}
+.menu-mobile-options ul li a{
+  color: hsl(232, 10%, 55%);
+  font-size: 1.8rem;
+}
+header .menu-mobile nav ul li button {
+  background-color: hsl(51, 100%, 49%);
+  padding: 15px 25px;
+}
 /* parte del hero main */
 .main-hero-container {
   width: 100%;
@@ -131,6 +167,7 @@ header .menu-mobile {
 }
 .main-egg-container .image-container img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 .main-egg-container .text-container {
